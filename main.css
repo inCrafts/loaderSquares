@@ -1,0 +1,98 @@
+@keyframes spin {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	20% {
+		-webkit-transform: rotateY(360deg);
+		-ms-transform: rotateY(360deg);
+		-o-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+
+	40% {
+		-webkit-transform: rotateX(80deg);
+		-ms-transform: rotateX(180deg);
+		-o-transform: rotateX(180deg);
+		transform: rotateX(180deg);
+	}
+
+
+	60% {
+		-webkit-transform: rotateX(0);
+		-ms-transform: rotateX(0);
+		-o-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+
+
+	80% {
+		-webkit-transform: rotateX(360deg);
+		-ms-transform: rotateX(360deg);
+		-o-transform: rotateX(360deg);
+		transform: rotateX(360deg);
+	}
+
+	100% {
+		-webkit-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.sheet {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #262626;
+	-webkit-animation: spin 4s infinite ease-in-out;
+	-o-animation: spin 4s infinite ease-in-out;
+	animation: spin 4s infinite ease-in-out;
+}
+
+.sheet:nth-child(1) {
+	top: -24px;
+	left: -24px;
+	background: #00485f;
+	animation-delay: .2s;
+}
+
+.sheet:nth-child(2) {
+	top: 0;
+	left: -24px;
+	background: #00deea;
+	animation-delay: .4s;
+}
+
+.sheet:nth-child(3) {
+	top: -24px;
+	left: 0;
+	background: #00deea;
+	animation-delay: .8s;
+}
+
+.sheet:nth-child(4) {
+	top: 0;
+	left: 0;
+	background: #00485f;
+	animation-delay: .6;
+}
