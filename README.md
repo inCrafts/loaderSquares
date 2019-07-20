@@ -1,1 +1,1 @@
-# loaderSquares
+# loadingSquare
